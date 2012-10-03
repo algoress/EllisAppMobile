@@ -30,7 +30,7 @@ function findProd() {
 function parseJson(json) {
 	if ($(json).length != 0) {
 		$(json).each(function(index, element) {
-			$('<li><img src="_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo'));
+			$('<li><img src="http://test.vision121.it/appPhoneGap/_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo'));
 			//$('#testo').append(this["nome_it"]).trigger("create");
         });
 	}
@@ -105,7 +105,7 @@ $(document).ready(function(e) {
         <div data-role="navbar" data-grid="b" data-theme="a" >
           <ul>
             <li> <a id="btnChiSiamo" data-role="button" data-theme="a" data-transition="slide" href="#company" > Company </a> </li>
-            <li> <a id="btnProdotti" data-role="button" data-theme="a" data-transition="slide" href="#products" class="ui-btn-active" > Products </a> </li>
+            <li> <a id="btnProdotti" data-role="button" data-theme="a" data-transition="slide" href="#products" > Products </a> </li>
             <li> <a id="btnNews" data-role="button" data-theme="a" data-transition="slide" href="#page4" > News </a> </li>
             <li> <a id="btnDealers" data-role="button" data-theme="a" data-transition="slide" href="#page5" > Dealers </a> </li>
             <li> <a id="btnContact" data-role="button" data-theme="a" data-transition="slide" href="#page6" > Contact </a> </li>
