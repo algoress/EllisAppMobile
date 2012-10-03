@@ -3,6 +3,6 @@
 $(document).ready(function(e) {
 	
 	//ATTIVO MENU
-	$(pulsante).addClass("ui-btn-active");
+	//$(pulsante).addClass("ui-btn-active");
 	
 });
