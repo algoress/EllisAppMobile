@@ -22,12 +22,12 @@ function findProd() {
 function parseJson(json) {
 	if ($(json).length != 0) {
 		$(json).each(function(index, element) {
-			//$('<li><img src="_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo')).trigger("create");
-			$('#testo').append(this["nome_it"]);
+			$('<li><img src="_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo')).trigger("create");
+			//$('#testo').append(this["nome_it"]).trigger("create");
         });
 	}
 }
-var pulsante = "btnProdotti";
+
 $(document).ready(function(e) {
     findProd();
 });
@@ -52,8 +52,8 @@ $(document).ready(function(e) {
           </ul>
         </div>
     </div>
-    <div data-role="content" data-grid="a">
-    <ul id="testo">
+    <div data-role="content" data-grid="a" id="testo">
+    <ul >
     	<li></li>
     </ul>
     </div>
