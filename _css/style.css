@@ -1,0 +1,54 @@
+/* CSS Document */
+#loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: #000000 url(../_img/loading.gif) center center no-repeat;
+}
+
+#header .logo {
+	padding:10px;	
+}
+
+.content {
+	background: url('http://test.vision121.it/appPhoneGap/_img/bg.jpg') no-repeat top left #000000;
+	color:#ffffff;
+}
+
+.img {
+	width:100%;
+}
+
+.ui-content {
+	padding:0;
+}
+
+.ui-header .ui-btn-right {
+	margin:20% 0 10px 0;
+}
+
+.box-txt {
+	margin:20px;
+	text-align:justify;
+}
+
+#testo ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#testo li {
+	margin:0 2% 0 2%;
+	padding:0;
+	list-style:none;
+	float:left;
+	width:46%;
+}
+
+#testo li img {
+	width:100%;
+}
