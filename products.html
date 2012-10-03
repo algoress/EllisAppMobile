@@ -22,8 +22,8 @@ function findProd() {
 function parseJson(json) {
 	if ($(json).length != 0) {
 		$(json).each(function(index, element) {
-			$('<li><img src="_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo')).trigger("create");
-			//$('#testo').append("Test");
+			//$('<li><img src="_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo')).trigger("create");
+			$('#testo').append(this["nome_it"]);
         });
 	}
 }
