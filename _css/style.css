@@ -30,25 +30,80 @@
 	margin:20% 0 10px 0;
 }
 
+/*company*/
 .box-txt {
 	margin:20px;
 	text-align:justify;
 }
 
-#testo ul {
+
+/* lista prodotti*/
+#lista-prod ul {
 	margin:0;
 	padding:0;
 	list-style:none;
 }
 
-#testo li {
-	margin:0 2% 0 2%;
+#lista-prod li {
+	margin:0 1% 0 1%;
 	padding:0;
 	list-style:none;
 	float:left;
 	width:46%;
 }
 
-#testo li img {
+#lista-prod li img {
 	width:100%;
 }
+
+/*DETT PROD*/
+#menu-prod {
+	width:98%;
+	margin:1%;
+	float:left;
+	font-size:3em;
+	text-shadow:#CCC 1px 1px;
+}
+
+#dett-prod-img {
+	width:98%;
+	float:left;
+	clear:both;
+}
+
+#dett-prod-txt {
+	width:98%;
+	margin:1%;
+	float:left;
+	clear:both;
+	font-size:1.5em;
+}
+
+#dett-prod-txt h2 {
+	font-size:2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

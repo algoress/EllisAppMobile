@@ -7,9 +7,8 @@
 <link href="_css/style.css" rel="stylesheet" type="text/css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-<script type="text/javascript">
-var pulsante;
-</script>
+<script>jQuery.support.localStorage = true;</script>
+<script type="text/javascript" src="jquery-mobile/jquery.offline.js"></script>
 <script type="text/javascript" src="jquery-mobile/jquery.common.js"></script>
 <!-- Custom css -->
 <link rel="stylesheet" href="jquery-mobile/jqm-icon-pack-2.1.2-fa.css" />
@@ -17,8 +16,10 @@ var pulsante;
 	 To configure the site as a mobile application, go to Site -> Mobile Applications -> Configure Application Framework...
 <script src="/cordova.js" type="text/javascript"></script> -->
 <script language="javascript">
+
+/*
 function findProd() {
-	$("#testo").empty();
+	$("#lista-prod").empty();
 	$.ajax({
 		type: "GET",
 		url: "http://test.vision121.it/appPhoneGap/ext/findprod.php",
@@ -30,7 +31,7 @@ function findProd() {
 function parseJson(json) {
 	if ($(json).length != 0) {
 		$(json).each(function(index, element) {
-			$('<li><img src="http://test.vision121.it/appPhoneGap/_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /><br />'+this["nome_it"]+'</li>').appendTo($('#testo'));
+			$('<li><a hreg="#det-prod"><img src="http://test.vision121.it/appPhoneGap/_files/immagini/'+this["immagine"]+'" alt="'+this["nome_it"]+'"  /></a><br />'+this["nome_it"]+'</li>').appendTo($('#lista-prod'));
 			//$('#testo').append(this["nome_it"]).trigger("create");
         });
 	}
@@ -38,7 +39,7 @@ function parseJson(json) {
 
 $(document).ready(function(e) {
     findProd();
-});
+});*/
 </script>
 </head>
 <body>
@@ -66,8 +67,8 @@ $(document).ready(function(e) {
 		<h4 id="c-copyr"> </h4>
 	</div>
     <script type="text/javascript">
-	var my_date = new Date();	
-	$("#c-copyr").text("Copyright Ellis "+my_date.getFullYear());
+		var my_date = new Date();	
+		$("#c-copyr").text("Copyright Ellis "+my_date.getFullYear());
 	</script>
 </div>
 <div data-role="page" id="company" class="ui-page content">
@@ -87,15 +88,20 @@ $(document).ready(function(e) {
     </div>
     
     <div data-role="content">
-    	<img src="http://test.vision121.it/appPhoneGap/_img/bg-homepage.jpg" alt="Homepage" title="Homepage" class="img">
+    	<div class="box-txt">
+        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac risus nisl, nec dignissim ante. Aliquam quis magna et nibh imperdiet tristique sed a massa. Cras interdum adipiscing nunc, eu condimentum nisi feugiat sodales. Aliquam placerat pretium turpis eu blandit. Maecenas auctor ipsum non tellus placerat ut condimentum tortor interdum. Mauris sollicitudin est sit amet urna viverra ullamcorper. Morbi sollicitudin mi nec massa euismod eu malesuada est dignissim. Suspendisse pellentesque, purus vel sagittis euismod, eros tortor ultrices sem, non porta quam tortor vitae leo. Sed quam nunc, tempus ut dapibus non, elementum mattis mi. Ut varius euismod dignissim. Integer adipiscing luctus neque, vel elementum sem ullamcorper sit amet. Morbi sagittis sagittis felis et blandit. Maecenas dui ante, tincidunt sit amet fermentum nec, malesuada eu urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            <br>
+            <br>
+			Donec condimentum porta leo, sed feugiat mauris pellentesque sed. Curabitur vulputate tellus tincidunt lorem ultrices quis tincidunt nisl sodales. Maecenas sit amet ipsum erat, tempor ullamcorper tellus. Quisque mattis, urna eget hendrerit consequat, orci est lobortis diam, sed sagittis arcu turpis vel nibh. Nunc ac quam et tellus egestas semper. Ut nec mauris lectus, ac iaculis ligula. Maecenas ornare, diam at interdum facilisis, neque diam luctus quam, in fermentum nibh nunc at nisi. Suspendisse molestie varius faucibus. Vestibulum porta malesuada ullamcorper. Proin condimentum dui a ligula fermentum gravida.
+        </div>
     </div>
     
 	<div data-role="footer" id="footerDiv">
-		<h4 id="c-copyr"> </h4>
+		<h4 id="c-copyC"> </h4>
 	</div>
     <script type="text/javascript">
-	var my_date = new Date();	
-	$("#c-copyr").text("Copyright Ellis "+my_date.getFullYear());
+		var my_date = new Date();	
+		$("#c-copyC").text("Copyright Ellis "+my_date.getFullYear());
 	</script>
 </div>
 <div data-role="page" id="products" class="ui-page content">
@@ -114,18 +120,18 @@ $(document).ready(function(e) {
         </div>
     </div>
     
-    <div data-role="content">
-    	<ul id="testo">
+    <div data-role="content" id="dett-prod">
+    	<ul id="lista-prod">
             <li></li>
         </ul>
     </div>
     
 	<div data-role="footer" id="footerDiv">
-		<h4 id="c-copyr"> </h4>
+		<h4 id="c-copyP"> </h4>
 	</div>
     <script type="text/javascript">
 	var my_date = new Date();	
-	$("#c-copyr").text("Copyright Ellis "+my_date.getFullYear());
+	$("#c-copyP").text("Copyright Ellis "+my_date.getFullYear());
 	</script>
 </div>
 </body>
